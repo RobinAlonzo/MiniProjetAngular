@@ -1,0 +1,5 @@
+<div class="list-reserves">
+  <ng-container *ngFor="let unReleve of listeReleves$ | async">
+    <app-releve [unReleve]="unReleve"></app-releve>
+  </ng-container>
+</div>

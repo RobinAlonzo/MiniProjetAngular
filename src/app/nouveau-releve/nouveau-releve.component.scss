@@ -1,0 +1,76 @@
+.mon-form {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f5f5f5;
+
+  .subForm {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50vh;
+    margin: 20px;
+    box-shadow: lightgray 1px 1px 4px;
+    border: 1px solid lightgray;
+    font-family: Poppins, sans-serif;
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin: 10px auto;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .button {
+      background-color: #337ab7;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #23527c;
+      }
+    }
+  }
+
+  .vueForm {
+    justify-self: right;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50vh;
+    margin: 20px;
+    box-shadow: lightgray 1px 1px 4px;
+    border: 1px solid lightgray;
+    font-family: Poppins, sans-serif;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  .resultat {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    font-size: small;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+}
+
+
+
+

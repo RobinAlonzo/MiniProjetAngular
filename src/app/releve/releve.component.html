@@ -1,0 +1,16 @@
+<div class="releves-card">
+  <h3>Nom client : {{leReleve.nomClient | uppercase}}</h3>
+  <p>Nom technicien : {{leReleve.nomTechnicien | uppercase}}</p>
+  <p>Adresse : {{leReleve.adresseClient}}</p>
+  <p>Marque : {{leReleve.marque}}</p>
+  <p>Modele : {{leReleve.modele}}</p>
+  <p>Date de mise en service : {{leReleve.dateMiseEnService}}</p>
+  <p>Date Intervention : {{leReleve.dateIntervention}}</p>
+  <p>Numéro de série : {{leReleve.numeroSerie}}</p>
+  <p>Description : {{leReleve.description}}</p>
+  <p>Temps intervention : {{leReleve.tempsIntervention}}</p>
+
+  <a routerLink="/releve/{{leReleve.id}}"><button class="button">Voir détail</button></a>
+
+
+</div>

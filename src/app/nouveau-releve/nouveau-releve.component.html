@@ -1,0 +1,63 @@
+<div class="mon-form">
+  <section class="subForm saisieForm">
+    <h2>Nouvelle Intervention</h2>
+    <form [formGroup]="formulaire">
+      <div class="form-group">
+        <label for="nomClient">Nom client</label>
+        <input type="text" class="form-control" id="nomCLient" formControlName="nomClient"/>
+      </div>
+      <div class="form-group">
+        <label for="nomTechnicien">Nom technicien</label>
+        <input type="text" class="form-control" id="nomTechnicien" formControlName="nomTechnicien"/>
+      </div>
+      <div class="form-group">
+        <label for="adresseClient">Adresse du client</label>
+        <input type="text" class="form-control" id="adresseClient" formControlName="adresseClient"/>
+      </div>
+      <div class="form-group">
+        <label for="marque">Marque</label>
+        <input type="text" class="form-control" id="marque" formControlName="marque"/>
+      </div>
+      <div class="form-group">
+        <label for="modele">Model</label>
+        <input type="text" class="form-control" id="modele" formControlName="modele"/>
+      </div>
+      <div class="form-group">
+        <label for="dateMiseEnService">Date mise en service</label>
+        <input type="date" class="form-control" id="dateMiseEnService" formControlName="dateMiseEnService"/>
+      </div>
+      <div class="form-group">
+        <label for="dateIntervention">Date Intervention</label>
+        <input type="date" class="form-control" id="dateIntervention" formControlName="dateIntervention"/>
+      </div>
+      <div class="form-group">
+        <label for="numeroSerie">Numero de sairie</label>
+        <input type="text" class="form-control" id="numeroSerie" formControlName="numeroSerie"/>
+      </div>
+      <div class="form-group">
+        <label for="description">Description </label>
+        <input type="text" class="form-control" id="description" formControlName="description"/>
+      </div>
+      <div class="form-group">
+        <label for="tempsIntervention">Temps intervention</label>
+        <input type="text" class="form-control" id="tempsIntervention" formControlName="tempsIntervention"/>
+      </div>
+      <button type="submit" class="button">Ajouter l'intervention</button>
+    </form>
+  </section>
+      <section class="vueForm">
+        <h2>Vue du relevé</h2>
+      <div class="resultat" *ngIf="currentReleve$ | async as releve">
+        <p>{{releve.nomClient}}</p>
+        <p>{{releve.nomTechnicien}}</p>
+        <p>{{releve.adresseClient}}</p>
+        <p>{{releve.marque}}</p>
+        <p>{{releve.modele}}</p>
+        <p>{{releve.dateMiseEnService | date: 'dd/MM/yyyy'}}</p>
+        <p>{{releve.dateIntervention| date: 'dd/MM/yyyy'}}</p>
+        <p>{{releve.numeroSerie}}</p>
+        <p>{{releve.description}}</p>
+        <p>{{releve.tempsIntervention}}</p>
+      </div>
+  </section>
+</div>

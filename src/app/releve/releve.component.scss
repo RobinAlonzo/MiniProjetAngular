@@ -1,0 +1,24 @@
+.releves-card {
+    box-sizing: border-box;
+    box-shadow: lightgray 4px 4px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+
+        h3 {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .button {
+          background-color: #337ab7;
+          color: #ffffff;
+          padding: 10px;
+          margin: 10px;
+          border-radius: 5px;
+          font-family: 'Poppins', sans-serif;
+        }
+}
